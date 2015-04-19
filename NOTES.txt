@@ -1,0 +1,25 @@
+title page
+  - state my gigs offered
+  - state my intent to be able to wander around helping incubate community owned/run operations
+    like arcades, cafes, tea houses, fab labs, reading rooms, surf clubs
+    state intent to get on the fundme page that I found with that solar place, http://www.raytonsolar.com has a campaign on here
+
+
+- replace logo with my star sig
+- put up on heroku
+- how to host it w my domain name?
+- put my message up
+- email facility w spam protector
+
+### Errors
+  - iojs hangs on port 5000
+    - use lsof -i :5000 to see what process is on 5000 (likely iojs)
+    - kill that process!
+    - look for how iojs handles error and close events
+      - try adding lrServer.close() in these places
+      - thanks: http://stackoverflow.com/questions/24916313/gulp-livereload-frequently-getting-error-error-listen-eaddrinuse
+
+### pointing theHomie at heroku
+  - https://devcenter.heroku.com/articles/custom-domains
+  - get my surfpage into this app STAT
+  - 

@@ -58,8 +58,8 @@ class App {
           this.props.path === '/' ?
           <div className="jumbotron">
             <div className="container text-center">
-              <h1>React</h1>
-              <p>Complex web apps made easy</p>
+              <h1>Surf Trips with Todd</h1>
+              <p>Pay me to go on surf trips with you.</p>
             </div>
           </div> :
           <div className="container">
@@ -70,9 +70,9 @@ class App {
         <div className="navbar-footer">
           <div className="container">
             <p className="text-muted">
-              <span>© Your Company</span>
+              <span>© theHomie.com</span>
               <span><a href="/">Home</a></span>
-              <span><a href="/privacy">Privacy</a></span>
+              <span><a href="/policies">Policies</a></span>
               <span>{'Viewport: ' + this.props.viewport.width + 'x' + this.props.viewport.height}</span>
             </p>
           </div>
