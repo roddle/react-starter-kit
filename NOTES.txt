@@ -19,7 +19,16 @@ title page
       - try adding lrServer.close() in these places
       - thanks: http://stackoverflow.com/questions/24916313/gulp-livereload-frequently-getting-error-error-listen-eaddrinuse
 
+### Deploying to Heroku
+  - probably need to run gulp build before starting the server
+
 ### pointing theHomie at heroku
   - https://devcenter.heroku.com/articles/custom-domains
   - get my surfpage into this app STAT
-  - 
+
+### Commenting
+  If I am going to specialize in orchestrating mashups as a service, I should start asap.
+  - see the hypercomments-widget in NOTES folder
+    - Maybe I should use this just on the articles I publish. 
+    - as for customers I should build a way to allow paid customers to rate and comment on their experience with me
+    
