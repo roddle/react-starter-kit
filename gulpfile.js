@@ -184,30 +184,19 @@ gulp.task('sync', ['serve'], function(cb) {
   });
 
   gulp.watch(['build/**/*.*'].concat(
-    src.server.map(function(file) {return '!' + file;})
+    src.server.map(function(file) { return '!' + file; })
   ), function(file) {
     browserSync.reload(path.relative(__dirname, file.path));
   });
 });
 
-// Deploy to GitHub Pages
-gulp.task('deploy', function() {
-
-  // Remove temp folder
-  if (argv.clean) {
-    var os = require('os');
-    var repoPath = path.join(os.tmpdir(), 'tmpRepo');
-    $.util.log('Delete ' + $.util.colors.magenta(repoPath));
-    del.sync(repoPath, {force: true});
-  }
-
-  return gulp.src('build/**/*')
-    .pipe($.if('**/robots.txt', !argv.production ?
-      $.replace('Disallow:', 'Disallow: /') : $.util.noop()))
-    .pipe($.ghPages({
-      remoteUrl: 'https://github.com/{name}/{name}.github.io.git',
-      branch: 'master'
-    }));
+// Deploy via Git
+gulp.task('deploy', function(cb) {
+  var push = require('git-push');
+  var remote = argv.production ?
+    'https://github.com/{user}/{repo}.git' :
+    'https://github.com/{user}/{repo}-test.git';
+  push('./build', remote, cb);
 });
 
 // Run PageSpeed Insights
