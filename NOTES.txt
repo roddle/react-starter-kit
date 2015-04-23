@@ -12,7 +12,9 @@ title page
 - email facility w spam protector
 
 ### Deploying to Heroku
-  - see
+  - Example 1 and 2 from koistya https://github.com/kriasoft/react-starter-kit/commit/63d4751cbe19ddfa42ee44767256ba4565e6244e#commitcomment-10840631
+    - and https://github.com/kriasoft/react-starter-kit/commit/5c1833dd78d0449ed4aa4d3424793c10e74235ed
+  - older tips
     - http://stackoverflow.com/questions/24504476/how-to-deploy-node-that-uses-gulp-to-heroku
     - https://devcenter.heroku.com/articles/node-best-practices
     - https://devcenter.heroku.com/articles/nodejs-support#customizing-the-build-process
