@@ -42,6 +42,18 @@ title page
     - Maybe I should use this just on the articles I publish. 
     - as for customers I should build a way to allow paid customers to rate and comment on their experience with me
 
+## SETUP
+  - clone my repo & initialize
+    - $ git clone URL
+    - $ cd thisDIR
+    - $ npm install
+  - add upstream branch
+    - $ git remote add upstream https://github.com/kriasoft/react-starter-kit.git
+    - $ git remote -v
+    - $ git pull upstream master
+
+### adding the remote branch
+
 ### Updating from the remote branch
   - git fetch upstream            // get the code from the branch I forked from
   - git merge upstream/master     // merge this code with my local branch
