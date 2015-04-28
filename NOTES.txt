@@ -50,7 +50,12 @@ title page
   - add upstream branch
     - $ git remote add upstream https://github.com/kriasoft/react-starter-kit.git
     - $ git remote -v
-    - $ git pull upstream master
+  - get upstream code and merge into mine
+    - $ git fetch upstream
+    - (really this should merge to a staging branch and then to master)
+    - $ git merge upstream/master
+    - npm install
+
 
 ### adding the remote branch
 
